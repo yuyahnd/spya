@@ -1,0 +1,2 @@
+# spya
+Simple Python API
