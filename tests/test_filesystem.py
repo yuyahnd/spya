@@ -1,9 +1,9 @@
 from spya import filesystem as fs
-import os
+from os import path as op
 
 def test_paths():
     path = fs.paths('.', 'tests')
-    assert path == '.' + os.path.sep + 'tests'
+    assert path == '.' + op.sep + 'tests'
 
 def test_exists():
     assert True == fs.exists(__file__)
@@ -16,7 +16,7 @@ def test_isdir():
     assert True == fs.isdir(dirname)
 
 def test_dirname():
-    dirname = os.path.dirname(__file__)
+    dirname = op.dirname(__file__)
     assert dirname == fs.dirname(__file__)
 
 def test_basename():
