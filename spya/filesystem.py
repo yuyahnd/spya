@@ -53,3 +53,8 @@ def extension(filepath):
     basename = op.basename(filepath)
     return op.splitext(basename)[1]
 
+def getsize(filepath):
+    """
+    Return the size of a file.
+    """
+    return op.getsize(filepath)

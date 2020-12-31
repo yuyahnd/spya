@@ -27,3 +27,6 @@ def test_filename():
 
 def test_extension():
     assert '.py' == fs.extension(__file__)
+
+def test_getsize():
+    assert fs.getsize(__file__) is not None
