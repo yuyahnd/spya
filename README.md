@@ -5,6 +5,7 @@ Simple Python API
 
 ```
 $ git clone https://github.com/yuyahnd/spya.git
+$ pip install -e .
 ```
 
 ### Test
